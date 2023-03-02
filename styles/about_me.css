@@ -1,0 +1,36 @@
+.about_me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    column-gap: 50px;
+}
+
+.about_me_info {
+    font-family: Helvetica;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 30px;
+}
+
+.about_me_titles {
+    font-family: Helvetica;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.profile_pic_and_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_links {
+    margin-top: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+.experience_list_item_title {
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.experience_list_item_duration {
+    font-family: Helvetica;
+    font-weight: light;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}

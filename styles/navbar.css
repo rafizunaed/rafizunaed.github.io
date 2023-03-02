@@ -1,0 +1,53 @@
+.navbar {
+    position: fixed;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    top: 0px;
+    left: 100px;
+    right: 100px;
+
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(225, 149, 9);
+
+    transition: color 0.5s;
+    background-color:  rgb(25, 26, 26);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}    
+
+.nav_button:hover {
+    color: rgb(36, 39, 226);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.non-home {
+    width: 625px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.a_nav_button:link,
+.a_nav_button:visited, 
+.a_nav_button:active {
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(225, 149, 9);
+
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.a_nav_button:hover {
+    font-family: Helvetica;
+    color: rgb(36, 39, 226);
+    cursor: pointer;
+}

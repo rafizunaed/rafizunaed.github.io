@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(25, 26, 26);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 75px;
+
+    font-family: Helvetica;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.812);
+}
+
+a:link, 
+a:visited, 
+a:active, 
+a:hover{
+    color: rgba(136, 171, 240, 0.812);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.footer_note {
+    font-family: Helvetica;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.812);
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+.indv_news {
+    font-family: Helvetica;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    align-items: center;
+}
+
+.news_date {
+    font-family: Helvetica;
+    background-color: brown;
+    width: 72px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}

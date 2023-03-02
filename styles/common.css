@@ -1,0 +1,17 @@
+.achievements,
+.news,
+.publications,
+.experience {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.achievements_main_header,
+.news_main_header,
+.publications_main_header,
+.experience_main_header {
+    font-family: Helvetica;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
