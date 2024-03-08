@@ -10,21 +10,21 @@
 .article_title {
     font-family: Helvetica;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.1vw;
     color: rgb(255, 255, 255);
 }
 
 .article_author_list {
     font-family: Helvetica;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 1.1vw;
     color: rgba(255, 255, 255, 0.812);
 }
 
 .article_journal_conf_name {
     font-family: Helvetica;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 1.1vw;
     color: rgba(255, 255, 255, 0.812);
     margin-bottom: 15px;
 }
