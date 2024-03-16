@@ -15,3 +15,18 @@
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
+
+
+@media screen and (max-width:600px)
+{
+    .achievements,
+    .news,
+    .publications,
+    .experience {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 50px;
+    }
+
+
+}

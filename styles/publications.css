@@ -10,21 +10,21 @@
 .article_title {
     font-family: Helvetica;
     font-weight: bold;
-    font-size: 1.1vw; /* 16px */ 
+    font-size: 16px;
     color: rgb(255, 255, 255);
 }
 
 .article_author_list {
     font-family: Helvetica;
     margin-top: 10px;
-    font-size: 1.1vw; /* 16px */
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.812);
 }
 
 .article_journal_conf_name {
     font-family: Helvetica;
     margin-top: 10px;
-    font-size: 1.1vw; /* 16px */
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.812);
     margin-bottom: 15px;
 }
@@ -48,4 +48,37 @@
 .article_button:hover {
     background-color:rgb(83, 83, 232);
     color: white;
+}
+
+
+@media screen and (max-width:600px)
+{
+    .article {
+        grid-template-columns: 2fr;
+    }
+
+    .article_title {
+        font-size: 14px;
+    }
+
+    .article_author_list {
+        font-size: 14px;
+    }
+    
+    .article_journal_conf_name {
+        font-size: 14px;
+    }
+
+    .article_button:link,
+    .article_button:visited, 
+    .article_button:active {
+        font-size: 14px;
+    }
+
+    .article_pic {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 2fr;
+        align-items: center;
+    }
 }

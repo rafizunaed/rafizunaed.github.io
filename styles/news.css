@@ -14,3 +14,16 @@
     padding: 5px;
     border-radius: 10px;
 }
+
+@media screen and (max-width:600px)
+{
+    .news_date {
+        width: 50px;
+        height: 17px;
+        border-radius: 5px;
+    }
+
+    .indv_news {
+        column-gap: 10px;
+    }
+}

@@ -34,3 +34,16 @@ a:hover{
     position: relative;
     top: -75px;
 }
+
+
+@media screen and (max-width:600px)
+{
+    body {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 150px;
+        font-size: 14px;
+    }
+
+
+}
