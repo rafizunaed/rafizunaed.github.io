@@ -8,7 +8,7 @@
 .experience {
     margin-left: var(--desktop-body-margin-left);
     margin-right: var(--desktop-body-margin-right);
-    margin-top: var(--desktop-body-margin-top);
+    margin-top: 5vh; /*var(--desktop-body-margin-top);*/
 }
 
 .achievements_main_header,

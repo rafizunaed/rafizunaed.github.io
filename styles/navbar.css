@@ -5,7 +5,7 @@
     --desktop-navbar-padding-bottom: 1vw;
     
     --desktop-navbar-fontsize: 1.75vw;
-    --desktop-navbar-nonhome-width: 15vw; /* 50vw */
+    --desktop-navbar-nonhome-width: 5vw; /* 50vw */
 
     --navbar-fontcolor: rgb(225, 149, 9);
     --navbar-fontcolor-hover: rgb(36, 39, 226);
@@ -13,6 +13,9 @@
     --navbar-border-bottom-size: 0.1vw;
     --navbar-border-bottom-color: white;
     --navbar-color-transition: 0.5s;
+
+    --mobile-navbar-fontsize: 4vw;
+    --mobile-navbar-nonhome-width: 7vw;
 }
 
 .navbar {
@@ -68,11 +71,82 @@
     cursor: pointer;
 }
 
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: var(--desktop-navbar-fontsize);
+    font-weight: bold;
+    color: var(--navbar-fontcolor);
+
+    border: none;
+    outline: none;
+    /*color: white;*/
+    padding: 0.5vw 0.5vw; /*14px 16px;*/
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--body-background-color); /*rgba(50, 48, 48, 1);*/
+    min-width: 10vw; /* 160px;*/
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: var(--body-background-color); /*rgba(50, 48, 48, 1);*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 0.5vw 0.5vw; /*12px 16px;*/
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+/*.dropdown-content a:hover {
+    background-color: #ddd;
+}*/
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 0.4vw solid transparent;
+	border-right: 0.4vw solid transparent;
+	border-top: 0.8vw solid var(--navbar-fontcolor);
+}
+
+.dropbtn_block{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 0.4vw;
+}
+
 /* Mobile Device Changes */
 @media screen and (max-aspect-ratio:1.5)
 {
     .navbar {
-        font-size: 4vw;
+        font-size: var(--mobile-navbar-fontsize);
         /*flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -81,7 +155,7 @@
     }
 
     .non-home {
-        width: 35vw; /*none;*/
+        width: var(--mobile-navbar-nonhome-width); /*none;*/
         /*display: flex;
         flex-direction: column;
         align-items: center;
@@ -91,6 +165,18 @@
     .a_nav_button:link,
     .a_nav_button:visited,
     .a_nav_button:active {
-        font-size: 4vw;
+        font-size: var(--mobile-navbar-fontsize);
+    }
+
+    .dropdown .dropbtn {
+        font-size: var(--mobile-navbar-fontsize);
+    }
+
+    .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 1vw solid transparent;
+        border-right: 1vw solid transparent;
+        border-top: 2vw solid var(--navbar-fontcolor);
     }
 }
