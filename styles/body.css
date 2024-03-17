@@ -1,12 +1,31 @@
-body {
-    background-color: rgb(25, 26, 26);
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 75px;
+:root {
+    --desktop-body-margin-left: 2vw;
+    --desktop-body-margin-right: 2vw;
+    --desktop-body-margin-top: 5.5vw;
 
-    font-family: Helvetica;
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.812);
+    --desktop-body-fontsize: 1.4vw;
+    --body-font-family: Helvetica;
+    --body-font-color: rgba(255, 255, 255, 0.812);
+    
+    --body-background-color: rgb(25, 26, 26);
+
+
+    --mobile-body-margin-left: 1vw;
+    --mobile-body-margin-right: 1vw;
+    --mobile-body-margin-top: 5vh; /*17vh;*/
+    --mobile-body-fontsize: 4vw;
+}
+
+body {
+    background-color: var(--body-background-color);
+    
+    margin-left: var(--desktop-body-margin-left);
+    margin-right: var(--desktop-body-margin-right);
+    margin-top: var(--desktop-body-margin-top);
+
+    font-family: var(--body-font-family);
+    font-size: var(--desktop-body-fontsize);
+    color: var(--body-font-color);
 }
 
 a:link, 
@@ -19,31 +38,40 @@ a:hover{
 }
 
 .footer_note {
-    font-family: Helvetica;
-    font-size: 10px;
+    font-size: var(--desktop-body-fontsize);
     color: rgba(255, 255, 255, 0.812);
     text-align: center;
 }
 
 .section_anchor {
     position: relative;
-    top: -50px;
+    top: -5vh;
 }
 
 .first_section_anchor {
     position: relative;
-    top: -75px;
+    top: -12vh;
 }
 
 
 @media screen and (max-aspect-ratio:1.5)
 {
     body {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 200px;
-        font-size: 14px;
+        margin-left: var(--mobile-body-margin-left);
+        margin-right: var(--mobile-body-margin-right);
+        margin-top: var(--mobile-body-margin-top);
+        font-size: var(--mobile-body-fontsize);
     }
 
+    .footer_note {
+        font-size: var(--mobile-body-fontsize);
+    }
 
+    .section_anchor {
+        top: -12vh;
+    }
+
+    .first_section_anchor {
+        top: -20vh;
+    }
 }

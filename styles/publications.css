@@ -1,47 +1,42 @@
 .article {
-    margin-top: 30px;
+    margin-top: 1vw;
     display: grid;
     grid-template-columns: 3.75fr 1fr;
     align-items: center;
     background-color: rgba(50, 48, 48, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1vw;
+    border-radius: 0.5vw;
 }
 .article_title {
-    font-family: Helvetica;
     font-weight: bold;
-    font-size: 16px;
     color: rgb(255, 255, 255);
 }
 
 .article_author_list {
     font-family: Helvetica;
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 0.5vw;
     color: rgba(255, 255, 255, 0.812);
 }
 
 .article_journal_conf_name {
-    font-family: Helvetica;
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 0.5vw;
     color: rgba(255, 255, 255, 0.812);
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
 }
 
 .article_button:link,
 .article_button:visited, 
 .article_button:active {
-    font-family: Helvetica;
+    font-family: var(--body-font-family);
     background-color: white;
     color: rgb(83, 83, 232);
-    font-size: 16px;
-    padding: 5px;
-    border-radius: 5px;
+    font-size: var(--desktop-body-fontsize);
+    padding: 0.15vw;
+    border-radius: 0.25vw;
     cursor: pointer;
     border-color: rgb(83, 83, 232);
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.15vw;
     font-weight: bold;
 }
 
@@ -50,35 +45,48 @@
     color: white;
 }
 
+.article_pic {
+    width: 20vw;
+    height: 12vw;
+}
 
 @media screen and (max-aspect-ratio:1.5)
 {
     .article {
         grid-template-columns: 2fr;
+        margin-top: 3vw;
+        padding: 3vw;
     }
 
     .article_title {
-        font-size: 14px;
+        font-size: var(--mobile-body-fontsize);
     }
 
     .article_author_list {
-        font-size: 14px;
+        margin-top: 1vw;
+        font-size: var(--mobile-body-fontsize);
     }
     
     .article_journal_conf_name {
-        font-size: 14px;
+        font-size: var(--mobile-body-fontsize);
+        margin-top: 1vw;
+        margin-bottom: 2vw;
     }
 
     .article_button:link,
     .article_button:visited, 
     .article_button:active {
-        font-size: 14px;
+        font-size: var(--mobile-body-fontsize);
     }
 
     .article_pic {
-        margin-top: 20px;
+        margin-top: 4vw;
         display: grid;
         grid-template-columns: 2fr;
         align-items: center;
+        width: 60vw;
+        height: 40vw;
     }
+
+    
 }

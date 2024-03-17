@@ -1,34 +1,53 @@
+:root {
+    --desktop-navbar-padding-left: 2.5vw;
+    --desktop-navbar-padding-right: 2.5vw;
+    --desktop-navbar-padding-top: 1vw;
+    --desktop-navbar-padding-bottom: 1vw;
+    
+    --desktop-navbar-fontsize: 1.75vw;
+    --desktop-navbar-nonhome-width: 15vw; /* 50vw */
+
+    --navbar-fontcolor: rgb(225, 149, 9);
+    --navbar-fontcolor-hover: rgb(36, 39, 226);
+    --navbar-background-color: rgb(25, 26, 26);
+    --navbar-border-bottom-size: 0.1vw;
+    --navbar-border-bottom-color: white;
+    --navbar-color-transition: 0.5s;
+}
+
 .navbar {
     position: fixed;
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
     top: 0px;
-    left: 100px;
-    right: 100px;
+    left: 0px;
+    right: 0px;
+    
+    padding-top: var(--desktop-navbar-padding-top);
+    padding-bottom: var(--desktop-navbar-padding-bottom);
+    padding-left: var(--desktop-navbar-padding-left);
+    padding-right: var(--desktop-navbar-padding-right);
 
-    font-family: Helvetica;
-    font-size: 22px;
+    font-size: var(--desktop-navbar-fontsize);
     font-weight: bold;
-    color: rgb(225, 149, 9);
+    color: var(--navbar-fontcolor);
 
-    transition: color 0.5s;
-    background-color:  rgb(25, 26, 26);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    transition: color var(--navbar-color-transition);
+    background-color: var(--navbar-background-color);
+    border-bottom: var(--navbar-border-bottom-size) solid var(--navbar-border-bottom-color);
 }    
 
 .nav_button:hover {
-    color: rgb(36, 39, 226);
+    color: var(--navbar-fontcolor-hover);
     cursor: pointer;
     text-decoration: underline;
 }
 
 .non-home {
-    width: 625px;
+    width: var(--desktop-navbar-nonhome-width);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,44 +56,41 @@
 .a_nav_button:link,
 .a_nav_button:visited, 
 .a_nav_button:active {
-    font-family: Helvetica;
-    font-size: 22px;
+    font-size: var(--desktop-navbar-fontsize);
     font-weight: bold;
-    color: rgb(225, 149, 9);
-
+    color: var(--navbar-fontcolor);
     background-color: transparent;
     text-decoration: none;
 }
 
 .a_nav_button:hover {
-    font-family: Helvetica;
-    color: rgb(36, 39, 226);
+    color: var(--navbar-fontcolor-hover);
     cursor: pointer;
 }
 
-
+/* Mobile Device Changes */
 @media screen and (max-aspect-ratio:1.5)
 {
     .navbar {
-        left: 10px;
-        right: 10px;
-        font-size: 22px;
-        flex-direction: column;
+        font-size: 4vw;
+        /*flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        padding-top: none;
+        padding-bottom: none;*/
     }
 
     .non-home {
-        width: none;
-        display: flex;
+        width: 35vw; /*none;*/
+        /*display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between;*/
     }
 
     .a_nav_button:link,
     .a_nav_button:visited,
     .a_nav_button:active {
-        font-size: 22px;
+        font-size: 4vw;
     }
 }

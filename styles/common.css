@@ -1,18 +1,21 @@
+:root {
+    --header_title_font_color: rgb(255, 255, 255);
+}
+
 .achievements,
 .news,
 .publications,
 .experience {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
+    margin-left: var(--desktop-body-margin-left);
+    margin-right: var(--desktop-body-margin-right);
+    margin-top: var(--desktop-body-margin-top);
 }
 
 .achievements_main_header,
 .news_main_header,
 .publications_main_header,
 .experience_main_header {
-    font-family: Helvetica;
-    color: rgb(255, 255, 255);
+    color: var(--header_title_font_color);
     font-weight: bold;
 }
 
@@ -23,9 +26,9 @@
     .news,
     .publications,
     .experience {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 50px;
+        margin-left: var(--mobile-body-margin-left);
+        margin-right: var(--mobile-body-margin-right);
+        margin-top: 5vh;
     }
 
 

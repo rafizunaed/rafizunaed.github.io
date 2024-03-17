@@ -1,22 +1,41 @@
+:root {    
+    --about-me-info-line-height: var(--desktop-body-fontsize) * 5;
+    --about_me_title_color: rgb(255, 255, 255);
+
+    --desktop-about-me-column-gap: 1vw;
+    --desktop-about-me-profile-pic-width: 20vw;
+    --desktop-about-me-profile-pic-height: 20vw;
+
+    --desktop-profile-links-margin-top: 1vh;
+    --desktop-profile_links-width: 20vw;
+
+    --desktop-about-me-profile-links-pic-width: 2vw;
+    --desktop-about-me-profile-links-pic-height: 2vw;
+
+    --mobile-about-me-profile-pic-width: 80vw;
+    --mobile-about-me-profile-pic-height: 80vw;
+    --mobile-about-me-profile-links-pic-width: 10vw;
+    --mobile-about-me-profile-links-pic-height: 10vw;
+    --mobile-profile_links-width: 80vw;
+}
+
 .about_me {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    column-gap: 50px;
+    margin-left: var(--desktop-body-margin-left);
+    margin-right: var(--desktop-body-margin-right);
+    column-gap: var(--desktop-about-me-column-gap);
 }
 
 .about_me_info {
-    font-family: Helvetica;
     text-align: justify;
     text-justify: inter-word;
-    line-height: 30px;
+    line-height: var(--about-me-info-line-height);
 }
 
 .about_me_titles {
-    font-family: Helvetica;
-    color: rgb(255, 255, 255);
+    color: var(--about_me_title_color);
     font-weight: bold;
 }
 
@@ -28,20 +47,46 @@
 }
 
 .profile_links {
-    margin-top: 10px;
-    width: 300px;
+    margin-top: var(--desktop-profile-links-margin-top);
+    width: var(--desktop-profile_links-width);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.profile_pic {
+    width: var(--desktop-about-me-profile-pic-width);
+    height: var(--desktop-about-me-profile-pic-height);
+}
+
+.profile_links_pic {
+    height: var(--desktop-about-me-profile-links-pic-height);
+    width: var(--desktop-about-me-profile-links-pic-width);
+}
 
 @media screen and (max-aspect-ratio:1.5)
 {
     .about_me {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 14px;
+        margin-left: var(--mobile-body-margin-left);
+        margin-right: var(--mobile-body-margin-right);
         grid-template-columns: 2fr;
+    }
+
+    .profile_pic {
+        margin-top: 4vh;
+        width: var(--mobile-about-me-profile-pic-width);
+        height: var(--mobile-about-me-profile-pic-height);
+        max-width: 80vw;
+    }
+
+    .profile_links_pic {
+        width: var(--mobile-about-me-profile-links-pic-width);
+        height: var(--mobile-about-me-profile-links-pic-height);
+        max-width: 10vw;
+    }
+
+    .profile_links {
+        width: var(--mobile-profile_links-width);
+        max-width: 80vw;
     }
 }
