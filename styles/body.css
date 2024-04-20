@@ -4,8 +4,8 @@
     --desktop-body-margin-top: 8vw;
 
     --desktop-body-fontsize: 1.4vw;
-    --body-font-family: Helvetica;
-    --body-font-color: rgba(255, 255, 255, 0.812);
+    --body-font-family: "Times New Roman";
+    --body-font-color: rgba(255, 255, 255, 0.9);
     
     --body-background-color: rgb(25, 26, 26);
 
@@ -14,6 +14,13 @@
     --mobile-body-margin-right: 1vw;
     --mobile-body-margin-top: 5vh; /*17vh;*/
     --mobile-body-fontsize: 4vw;
+}
+
+.href_default:link,
+.href_default:visited, 
+.href_default:active 
+.href_default:hover {
+    color: rgb(187, 222, 251);
 }
 
 body {

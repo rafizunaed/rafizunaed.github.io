@@ -7,7 +7,7 @@
     --desktop-navbar-fontsize: 1.75vw;
     --desktop-navbar-nonhome-width: 5vw; /* 50vw */
 
-    --navbar-fontcolor: rgb(225, 149, 9);
+    --navbar-fontcolor: white;
     --navbar-fontcolor-hover: rgb(36, 39, 226);
     --navbar-background-color: rgb(25, 26, 26);
     --navbar-border-bottom-size: 0.1vw;
