@@ -2,6 +2,7 @@
     --header_title_font_color: rgb(255, 255, 255);
 }
 
+.ml_comp_history,
 .achievements,
 .news,
 .publications,
@@ -11,6 +12,7 @@
     margin-top: 5vh; /*var(--desktop-body-margin-top);*/
 }
 
+.ml_comp_history_main_header,
 .achievements_main_header,
 .news_main_header,
 .publications_main_header,

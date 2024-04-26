@@ -7,3 +7,10 @@
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 0.5vw;
 }
+
+.experience_list_item_desc {
+    font-weight: light;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.5vw;
+    font-style: italic;
+}

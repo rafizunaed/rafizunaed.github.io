@@ -1,0 +1,12 @@
+.ml_comp_history_title {
+    color: rgb(187, 222, 251);
+}
+
+.ml_comp_history_list_item {
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.ml_comp_history_title:hover {
+    text-decoration: underline;
+}
